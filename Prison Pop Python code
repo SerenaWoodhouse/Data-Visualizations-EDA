@@ -6,7 +6,9 @@
 # 
 # ## Introduction
 
-# In this Project I run some Exploratory Data Analysis on a couple of Data sets on the topic of prison populations in the United States. While the United States has only 5 percent of the world's population, it has nearly 25 percent of its prisoners — about 2.2 million people.[<sup>1</sup>](#fn1 "footnote and tooltip 1")  I wanted to do more research into trends of crime and how it compares to trends in the prisoner population.
+# In this Project I run some Exploratory Data Analysis on a couple of Data sets on the topic of prison populations in the United States. 
+#While the United States has only 5 percent of the world's population, it has nearly 25 percent of its prisoners — about 2.2 million people.
+#[<sup>1</sup>](#fn1 "footnote and tooltip 1")  I wanted to do more research into trends of crime and how it compares to trends in the prisoner population.
 
 # ### Packages and Libraries used
 
@@ -146,7 +148,8 @@ fig.update_layout({"xaxis"+str(i+1): dict(title_font_size= 12) for i in range(7)
 fig.show()
 
 
-# I noticed that there were values that were abnormally high in the year column so I pulled out any data that included jails in the count to see how if effected totals compared to the rest of the data. 
+# I noticed that there were values that were abnormally high in the year column so I pulled out any data that included jails in the count 
+#to see how if effected totals compared to the rest of the data. 
 
 # In[43]:
 
@@ -166,7 +169,8 @@ fig.for_each_annotation(lambda a: a.update(text=a.text.split("=")[-1]))
 fig.show()
 
 
-# Since there weren't many observations including jails and those that do include jail counts did seem to be different enough that I removed that data for the rest of the analysis. I then narrowed my focus on the two crime variables to see how they correlated with each other. 
+# Since there weren't many observations including jails and those that do include jail counts did seem to be different enough that 
+#I removed that data for the rest of the analysis. I then narrowed my focus on the two crime variables to see how they correlated with each other. 
 
 # In[13]:
 
